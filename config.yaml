@@ -1,0 +1,17 @@
+credentials:
+  usernames:
+    jsmith:
+      email: jsmith@example.com
+      name: John Smith
+      password: '$2b$12$Pr8XcyQEcMsWBCQ3Xf2OeOn74kqRMonTf8n/BRPy3j2nEneWlduUC' # We will fill this in the next step
+    rdoe:
+      email: rdoe@example.com
+      name: Rebecca Doe
+      password: '' # We will fill this in the next step
+cookie:
+  expiry_days: 30
+  key: some_signature_key # This should be a random secret key
+  name: some_cookie_name
+preauthorized:
+  emails:
+  - jsmith@example.com
