@@ -1,17 +1,18 @@
-# 
+# Real-Time Learner Profiler and a State-Aware Socratic Math Tutor
+
 (An AI-Powered Socratic Tutor for Personalized Math Education) 
+
 A project submitted for the Minor in AI program at IIT Ropar.
-Live Demo
-[Link to your deployed Streamlit Community Cloud application will go here]
+
 1. Project Overview
-EULER is an end-to-end prototype of an adaptive learning system designed to address the limitations of one-size-fits-all education. The system leverages a dual-AI architecture to create a personalized and interactive mathematics quiz experience for middle school students (Grades 6-8).
+   This is an end-to-end prototype of an adaptive learning system designed to address the limitations of one-size-fits-all education. The system leverages a dual-AI architecture to create a personalized and interactive mathematics quiz experience for middle school students (Grades 6-8).
 The core innovation is the integration of two custom-trained neural networks:
  * A Learner Profiler (GRU Model) that analyzes a student's behavior in real-time to infer their cognitive-affective state (e.g., CONCENTRATING, BORED, GAMING).
  * A Socratic Tutor (Fine-Tuned LLM) that takes the profiler's inference as input and generates intelligent, pedagogical feedback, guiding students to discover knowledge for themselves rather than simply providing answers.
 This project demonstrates a complete cycle of data analysis, model training, fine-tuning, and deployment, culminating in a functional web application that serves as a powerful proof-of-concept for the future of AI in personalized education.
 2. System Architecture
 The application is built on a two-component AI architecture that works in a continuous, real-time feedback loop.
-[A simple diagram showing: Student Interaction -> Learner Profiler -> Inferred State -> Socratic Tutor -> Socratic Feedback -> Student Interaction]
+[Student Interaction -> Learner Profiler -> Inferred State -> Socratic Tutor -> Socratic Feedback -> Student Interaction]
 Component 1: The Learner Profiler
  * Model: A Gated Recurrent Unit (GRU) sequential model, built with PyTorch.
  * Training Data: The 2017 ASSISTments dataset, containing millions of real-world student interactions.
@@ -33,7 +34,7 @@ Component 2: The Socratic Tutor
 5. Setup and Deployment
 This application is designed to be deployed on Streamlit Community Cloud. The trained AI models are hosted on the Hugging Face Hub to manage their large file sizes and ensure the application is lightweight.
 Step 1: Clone the Repository
-git clone [https://github.com/your-username/your-repository-name.git](https://github.com/your-username/your-repository-name.git)
+git clone https://github.com/aiotsir/AI_Personalized_Learning.git
 cd your-repository-name
 
 Step 2: Set Up Your AI Models on Hugging Face Hub
